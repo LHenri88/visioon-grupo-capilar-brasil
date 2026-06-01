@@ -35,3 +35,23 @@ h1,h2,h3,.font-display{font-family:var(--font-display);letter-spacing:-.015em}
 .scroll-hint{animation:scrollHint 2.4s ease-in-out infinite}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .marquee{animation:marquee 30s linear infinite}
+
+/* ---- Carrossel testemunhos ---- */
+@keyframes testimonialScroll{from{transform:translateX(0)}to{transform:translateX(-33.333%)}}
+.testimonial-carousel{animation:testimonialScroll 40s linear infinite}
+.testimonial-carousel:hover{animation-play-state:paused}
+
+/* ---- Hero parallax mesh per brand ---- */
+.hero-mesh-clinical{background:radial-gradient(ellipse at 60% 40%, #2E8B6B22 0%, transparent 70%), radial-gradient(ellipse at 20% 80%, #1B5E3F18 0%, transparent 60%), linear-gradient(135deg, #F5F8F5 0%, #2E8B6B08 100%)}
+.hero-mesh-luxury{background:radial-gradient(ellipse at 40% 30%, #2E8B6B28 0%, transparent 60%), radial-gradient(ellipse at 75% 70%, #F4D35E22 0%, transparent 55%), linear-gradient(160deg, #F5F8F5 0%, #1B5E3F10 100%)}
+.hero-mesh-energetic{background:radial-gradient(ellipse at 80% 20%, #F4D35E30 0%, transparent 50%), radial-gradient(ellipse at 20% 70%, #1B5E3F20 0%, transparent 60%), linear-gradient(120deg, #F5F8F5 0%, #2E8B6B12 100%)}
+
+/* ---- Floating background dots ---- */
+.dot-grid{background-image:radial-gradient(#1B5E3F18 1px, transparent 1px);background-size:28px 28px}
+
+/* ---- Glowing border card ---- */
+.glow-card:hover{box-shadow:0 0 0 2px #1B5E3F33, 0 20px 60px #1B5E3F22;transform:translateY(-6px)}
+.glow-card{transition:box-shadow .3s, transform .3s}
+
+/* ---- Number count up ---- */
+.tabular-nums{font-variant-numeric:tabular-nums}
