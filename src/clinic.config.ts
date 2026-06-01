@@ -51,19 +51,19 @@ export const CLINIC = {
       "id": "implante-capilar",
       "name": "Transplante FUE",
       "desc": "Técnica minimamente invasiva, extração folículo a folículo.",
-      "img": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800"
+      "img": "/img/procedure-fue.jpg"
     },
     {
       "id": "implante-barba",
       "name": "Implante de Barba",
       "desc": "Barba cheia e simétrica com técnica FUE adaptada.",
-      "img": "https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?w=800"
+      "img": "/img/procedure-barba.jpg"
     },
     {
       "id": "tratamento-calvicie",
       "name": "Sistema Alta Densidade®",
       "desc": "Até 100 folículos por cm² — exclusivo do Grupo Capilar.",
-      "img": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800"
+      "img": "/img/procedure-calvicie.jpg"
     }
   ],
   "numbers": [
@@ -158,6 +158,16 @@ export const CLINIC = {
     "Recorde Mundial de Extração FUE",
     "5º maior grupo capilar do mundo",
     "Clínica que mais realiza FUE no Brasil"
-  ]
+  ],
+  "images": {
+    "hero": "/img/hero.jpg",
+    "procedures": {
+      "implante-capilar": "/img/procedure-fue.jpg",
+      "implante-barba": "/img/procedure-barba.jpg",
+      "tratamento-calvicie": "/img/procedure-calvicie.jpg"
+    },
+    "team": "/img/team.jpg",
+    "_note": "Grupo Capilar: site retornou SVG vazios via WebFetch — usamos geração nano-banana"
+  }
 } as const;
 export type ClinicConfig = typeof CLINIC;
